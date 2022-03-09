@@ -1,0 +1,65 @@
+// Your variable overrides
+$night: #0b090a;
+$mirage: #161a1d;
+$rosewood: #660708;
+$tabasco: #a4161a;
+$cornell-red: #ba181b;
+$carmine: #e5383b;
+$silver-chalice: #b1a7a6;
+$quill-grey: #d3d3d3;
+$white-smoke: #f5f3f4;
+$white: #ffffff;
+$silver-tree: #52B788;
+$amber: #ffc300;
+$dirty-blue: #2c7da0;
+
+$custom-colors: (
+  'night': 	$night,
+  'mirage': 	$mirage,
+  'rosewood': 	$rosewood,
+  'tabasco': 	$tabasco,
+  'cornell-red': 	$cornell-red,
+  'carmine': 	$carmine,
+  'silver-chalice':  $silver-chalice,
+  'quill-grey': 	$quill-grey,
+  'white-smoke': 	$white-smoke,
+  'white': 	$white,
+  'silver-tree': 	$silver-tree,
+  'amber': $amber,
+  'dirty-blue': $dirty-blue
+);
+
+// set new colors
+$primary: $night;
+$danger:  $cornell-red;
+$info:    $dirty-blue;
+$warning: $amber;
+
+$theme-colors: (
+  "primary":  $primary,
+  "danger":   $danger,
+  "info":     $info,
+  "success":  $silver-tree,
+  "warning": $warning
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// borders
+$border-radius:               0;
+$border-radius-sm:            0;
+$border-radius-lg:            0;
+$border-radius-pill:          0;
+
+// remove the default focus from bootstrap
+$btn-focus-box-shadow: none;
+$input-btn-focus-width:         0;
+$input-btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+$input-btn-focus-color-opacity: 0;
+
+$enable-negative-margins: true;
+
+// Import bootstrap latest
+// @import 'bootstrap';
+@import "~bootstrap/scss/bootstrap.scss";

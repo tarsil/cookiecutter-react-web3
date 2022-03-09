@@ -1,0 +1,94 @@
+@import "./{{ cookiecutter.project_name }}.scss";
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Oswald, Montserrat;
+  background-color: $white-smoke;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+}
+
+/*
+  * Jumbotron
+  **/
+.jumbotron {
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.h100 {
+  height: 100vh !important;
+}
+
+.icon-logo {
+  width: 32px;
+}
+
+.text-size {
+  letter-spacing: 0.5;
+  font-size: 16px;
+}
+
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  // background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.main-content {
+  margin: 24px 16px;
+  padding: 24px;
+  min-height: 280px;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-layout-login {
+  min-height: 80vh;
+  // padding: 24px;
+}
+
+.bg-metamask {
+  background: #f6851b;
+}
+
+.space-align-block {
+  flex: none;
+  margin: 8px 4px;
+  padding: 4px;
+  border: 1px solid #40a9ff;
+}
