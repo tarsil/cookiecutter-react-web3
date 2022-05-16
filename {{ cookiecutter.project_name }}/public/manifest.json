@@ -1,5 +1,5 @@
 {
-  "short_name": "VoidOrg",
+  "short_name": "{{ cookiecutter.project_name }}",
   "name": "Create React App Sample",
   "icons": [
     {

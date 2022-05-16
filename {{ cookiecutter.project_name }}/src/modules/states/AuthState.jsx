@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function useVoidOrgAuth() {
+export default function useRequiredAuth() {
   let initialAuthed = false
 
   if (localStorage.getItem("{{ cookiecutter.project_name }}Authed")) {
